@@ -9,10 +9,13 @@ const App = () => {
   const [phone, setPhone] = useState("")
   const [amount,setAmount] = useState('')
   const [walletAddress,setWalletAdress] = useState('')
+  
+  
 
   const componentProps = {
     email,
     amount,
+    currency:'GHS',
     metadata: {
       name,
       phone,
@@ -74,7 +77,7 @@ const App = () => {
               <input
                 type="text"
                 id="amount"
-                value={amount} 
+                value={amount}GHS 
                 onChange={(e) => setAmount(e.target.value)}
               />
             </div>
